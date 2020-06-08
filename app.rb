@@ -2,5 +2,9 @@ require 'sinatra'
 require './config'
 
 get '/' do
-    'hola mundo'
+    erb :adivinar_numero
+end
+
+post '/' do
+    "Ganaste!"
 end
