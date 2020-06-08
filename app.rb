@@ -6,5 +6,5 @@ get '/' do
 end
 
 post '/' do
-    "Ganaste!"
+    erb :ganaste
 end
