@@ -6,5 +6,9 @@ get '/' do
 end
 
 post '/' do
-    erb :ganaste
+    if params['clave'].to_i == 10
+        @mensaje = "Ganaste!"
+    else
+        @mensaje = "Perdiste!"
+    end
 end
