@@ -11,4 +11,6 @@ post '/' do
     else
         @mensaje = "Perdiste!"
     end
+
+    erb :resultado
 end
