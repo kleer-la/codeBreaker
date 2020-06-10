@@ -1,13 +1,17 @@
 class CodeBreaker
 
     def initialize secreto
+        @secreto=secreto
+        @status= "Perdiste!"
     end
 
     def validar numero
-        "Ganaste!"
+        if @secreto==numero
+            @status= "Ganaste!"
+        end
     end
 
     def status 
-        "Ganaste!"
+        @status
     end
 end
