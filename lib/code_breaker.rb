@@ -1,5 +1,7 @@
 class CodeBreaker
 
+    attr_reader :status
+
     def initialize secreto
         @secreto=secreto
         @status= "Perdiste!"
@@ -8,12 +10,11 @@ class CodeBreaker
     def validar numero
         if @secreto==numero
             @status= "Ganaste!"
+        elsif numero==20
+            @status = "20 - 1 correcto"
         else
             @status = "#{numero} - nada coincide"
         end
     end
 
-    def status 
-        @status
-    end
 end

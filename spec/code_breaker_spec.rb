@@ -20,4 +20,14 @@ describe CodeBreaker do
         #assert
         expect(result).to eq "23 - nada coincide"
     end
+
+    it "intento con 20 y hay un número correcto" do
+        #arrange
+        codeBreaker = CodeBreaker.new 10
+        #act
+        codeBreaker.validar 20
+        result = codeBreaker.status
+        #assert
+        expect(result).to eq "20 - 1 correcto"
+    end
 end
