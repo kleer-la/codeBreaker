@@ -5,7 +5,7 @@ describe CodeBreaker do
         #arrange
         codeBreaker = CodeBreaker.new 10
         #act
-        codeBreaker.validar 10
+        codeBreaker.validar "10"
         result = codeBreaker.status
         #assert
         expect(result).to eq "Ganaste!"
@@ -15,7 +15,7 @@ describe CodeBreaker do
         #arrange
         codeBreaker = CodeBreaker.new 10
         #act
-        codeBreaker.validar 23
+        codeBreaker.validar "23"
         result = codeBreaker.status
         #assert
         expect(result).to eq "23 - nada coincide"
@@ -25,7 +25,7 @@ describe CodeBreaker do
         #arrange
         codeBreaker = CodeBreaker.new 10
         #act
-        codeBreaker.validar 20
+        codeBreaker.validar "20"
         result = codeBreaker.status
         #assert
         expect(result).to eq "20 - 1 correcto"

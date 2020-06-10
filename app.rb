@@ -8,7 +8,7 @@ end
 
 post '/' do
     codeBreaker = CodeBreaker.new 10
-    codeBreaker.validar params['clave'].to_i
+    codeBreaker.validar params['clave']
     @mensaje = codeBreaker.status
 
     erb :resultado
