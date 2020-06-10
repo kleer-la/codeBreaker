@@ -6,4 +6,8 @@ class CodeBreaker
     def validar numero
         "Ganaste!"
     end
+
+    def status 
+        "Ganaste!"
+    end
 end

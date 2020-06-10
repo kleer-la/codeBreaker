@@ -5,7 +5,8 @@ describe CodeBreaker do
         #arrange
         codeBreaker = CodeBreaker.new 10
         #act
-        result = codeBreaker.validar 10
+        codeBreaker.validar 10
+        result = codeBreaker.status
         #assert
         expect(result).to eq "Ganaste!"
     end
