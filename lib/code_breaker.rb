@@ -8,6 +8,8 @@ class CodeBreaker
     def validar numero
         if @secreto==numero
             @status= "Ganaste!"
+        else
+            @status = "#{numero} - nada coincide"
         end
     end
 

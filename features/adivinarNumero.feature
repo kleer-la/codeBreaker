@@ -8,4 +8,4 @@ Scenario: adivinar el numero secreto
 Scenario: fallar al adivinar el numero secreto
     Given que iniciamos el juego
     When adivine con "26"
-    Then debe mostrarme "Perdiste!"
+    Then debe mostrarme "26 - nada coincide"

@@ -11,13 +11,13 @@ describe CodeBreaker do
         expect(result).to eq "Ganaste!"
     end
 
-    it "intento con 20 y pierdo" do
+    it "intento con 23 y pierdo" do
         #arrange
         codeBreaker = CodeBreaker.new 10
         #act
-        codeBreaker.validar 20
+        codeBreaker.validar 23
         result = codeBreaker.status
         #assert
-        expect(result).to eq "Perdiste!"
+        expect(result).to eq "23 - nada coincide"
     end
 end
