@@ -1,16 +1,15 @@
 require 'sinatra'
 require './config'
+require './lib/code_breaker'
 
 get '/' do
     erb :adivinar_numero
 end
 
 post '/' do
-    if params['clave'].to_i == 10
-        @mensaje = "Ganaste!"
-    else
-        @mensaje = "Perdiste!"
-    end
+    codeBreaker = CodeBreaker.new 10
+    codeBreaker.validar params['clave'].to_i
+    @mensaje = codeBreaker.status
 
     erb :resultado
 end
